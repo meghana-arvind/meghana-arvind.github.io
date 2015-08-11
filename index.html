@@ -110,9 +110,7 @@
 			<p id="date"></p>
 			<script>
 				var d = new Date();
-				var dateString = d.toDateString();
-				var date = document.getElementById('date');
-				date.textContent = dateString;
+				document.getElementById("date").innerHTML = d;
 			</script>
 			<script>
 				var person = {
