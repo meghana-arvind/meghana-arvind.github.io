@@ -1,0 +1,380 @@
+	while(true){
+				var userChoice1 = prompt("Enter password");
+				if(userChoice1 == "hello"){
+					break;
+				}
+			}
+			
+			
+			
+			<script>
+			while(true){
+				var userChoice = prompt("Enter username");
+				if(userChoice == "Meghana!"){
+					break;
+				}
+			}
+			while(true){
+				var userChoice1 = prompt("Enter password");
+				if(userChoice1 == "hello"){
+					break;
+				}
+			}
+		</script>
+		
+		
+		<table id = "pics" cellspacing = "15">
+					<tr>
+						<td>
+							<img "pic" src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_(square).png"></img>
+						</td>
+						<td>
+							<p id = "pic1">
+							Picture of facebook taken<br>
+							at
+							</p>
+							
+						</td>
+					</tr>
+					
+				</table>
+				
+				
+				
+				<div id="imageGallery">
+				      
+				    <img id="image" src= "file:///Users/Meghana/Pictures/Animals/922610_1451523478411774_1886955053_o.jpg", />
+				    
+				    <br>
+				    <button id="previous">Previous</button>    
+				    <button id="next">Next</button>
+			
+   
+				</div>
+				
+				<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+				
+				<script>
+				    $( document ).ready(function() {
+				
+				        var images = [
+				            "file:///Users/Meghana/Pictures/Animals/902830_1451523521745103_95116875_o.jpg",
+				            "file:///Users/Meghana/Pictures/Animals/1957635_1451523441745111_1037951234_o.jpg",
+				            "file:///Users/Meghana/Pictures/Animals/1888862_1451523438411778_473447017_o.jpg",
+				        ];
+				        
+				        var captions = [
+				        	"hi",
+				        	"hello",
+				        	"yo",
+				        ];
+				      
+				        
+				        var imageIndex = 0;
+		
+				        $("#previous").on("click", function(){          
+				            imageIndex = (imageIndex + images.length -1) % (images.length); 
+				            $("#image").attr('src', images[imageIndex]);
+				            document.getElementById("myCaption").innerHTML = captions[imageIndex];
+				        });
+				        
+				        $("#next").on("click", function(){
+				            imageIndex = (imageIndex+1) % (images.length);    
+				            $("#image").attr('src', images[imageIndex]);
+				            document.getElementById("myCaption").innerHTML = captions[imageIndex];
+				        });
+				        
+				        $("#image").attr(images[0]);
+				
+				    });
+				</script>
+				
+				
+				
+				
+				
+					var image = document.getElementById('myImage4');
+						    if (image.src.match("IMG_7021")) {
+						        image.src = "file:///Users/Meghana/Pictures/Scotland/IMG_7103.JPG";
+								document.getElementById("myCaption2").innerHTML = i;		        
+						    } 
+						    else if(image.src.match("IMG_7103")){
+						    	image.src =  "file:///Users/Meghana/Pictures/Scotland/IMG_7073.JPG";
+						    	document.getElementById("myCaption2").innerHTML = i;
+						    }
+						    else if(image.src.match("IMG_7073")){
+						    	image.src =  "file:///Users/Meghana/Pictures/Scotland/IMG_7024.JPG";
+						    	document.getElementById("myCaption2").innerHTML = i;
+						    }
+						     else if(image.src.match("IMG_7024")){
+						    	image.src =  "file:///Users/Meghana/Pictures/Scotland/IMG_7210.JPG";
+						    	document.getElementById("myCaption2").innerHTML = i;
+						    }
+						     else if(image.src.match("IMG_7210")){
+						    	image.src =  "file:///Users/Meghana/Pictures/Scotland/IMG_7021.JPG";
+						    	document.getElementById("myCaption2").innerHTML = i;
+						    }
+						    
+						    
+						    
+						    function reverseImage(){
+							var image = document.getElementById('myImage4');
+							 if (image.src.match("IMG_7021")) {
+						        image.src = "file:///Users/Meghana/Pictures/Scotland/IMG_7210.JPG";
+								document.getElementById("myCaption2").innerHTML = "";		        
+						    } 
+						    else if(image.src.match("IMG_7210")){
+						    	image.src =  "file:///Users/Meghana/Pictures/Scotland/IMG_7024.JPG";
+						    	document.getElementById("myCaption2").innerHTML = "";
+						    }
+						    else if(image.src.match("IMG_7024")){
+						    	image.src =  "file:///Users/Meghana/Pictures/Scotland/IMG_7073.JPG";
+						    	document.getElementById("myCaption2").innerHTML = "";
+						    }
+						     else if(image.src.match("IMG_7073")){
+						    	image.src =  "file:///Users/Meghana/Pictures/Scotland/IMG_7103.JPG";
+						    	document.getElementById("myCaption2").innerHTML = "";
+						    }
+						     else if(image.src.match("IMG_7103")){
+						    	image.src =  "file:///Users/Meghana/Pictures/Scotland/IMG_7021.JPG";
+						    	document.getElementById("myCaption2").innerHTML = "";
+						    }
+							
+						}		
+				
+				
+				
+			var images =[file:///Users/Meghana/Pictures/Peru/IMG_2485.JPG,
+							file:///Users/Meghana/Pictures/Peru/IMG_3282.JPG
+							file:///Users/Meghana/Pictures/Peru/IMG_3389.JPG,
+							file:///Users/Meghana/Pictures/Peru/IMG_3429.JPG,
+							file:///Users/Meghana/Pictures/Peru/IMG_2499.JPG,
+							file:///Users/Meghana/Pictures/Peru/IMG_2494.JPG,
+							file:///Users/Meghana/Pictures/Peru/IMG_3518.JPG,
+							file:///Users/Meghana/Pictures/Peru/IMG_2522.JPG,
+							file:///Users/Meghana/Pictures/Peru/IMG_2552.JPG,
+							file:///Users/Meghana/Pictures/Peru/IMG_2574.JPG,
+							file:///Users/Meghana/Pictures/Peru/IMG_2580.JPG,
+							file:///Users/Meghana/Pictures/Peru/IMG_2581.JPG,
+							file:///Users/Meghana/Pictures/Peru/IMG_2601.JPG,
+							file:///Users/Meghana/Pictures/Peru/IMG_2694.JPG,
+							file:///Users/Meghana/Pictures/Peru/IMG_2708.JPG,
+							file:///Users/Meghana/Pictures/Peru/IMG_2779.JPG,
+							file:///Users/Meghana/Pictures/Peru/IMG_2880.JPG,
+							file:///Users/Meghana/Pictures/Peru/IMG_2987.JPG
+						]
+				
+				#academics{
+		border: 1px outset pink;
+		border-radius: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		width:fixed;
+		background-color:white;
+		margin-bottom:10px;
+	}
+	#academics img{
+		width:500px;
+		border-radius:10px;
+		height: fixed;
+	}
+	#socialN{
+		border: 1px outset pink;
+		border-radius: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		width:fixed;
+		background-color:black;
+		margin-bottom:10px;
+	}
+	#socialN img{
+		width:100px;
+		border-radius:10px;
+		height: fixed;
+	}
+	#entertainment{
+		border: 1px outset pink;
+		border-radius: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		width:fixed;
+		background-color:white;
+		margin-bottom:10px;
+	}
+	#entertainment img{
+		width:300px;
+		border-radius:10px;
+		height: 100px;
+	}
+	#band{
+		border: 1px outset pink;
+		border-radius: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		width:fixed;
+		background-color:black;
+		margin-bottom:10px;
+	}
+	#band img{
+		width:150px;
+		border-radius:10px;
+		height: 100px;
+	}
+	#jobs{
+		border: 1px outset pink;
+		border-radius: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		width:fixed;
+		background-color:black;
+		margin-bottom:10px;
+	}
+	#jobs img{
+		width:150px;
+		border-radius:10px;
+		height: 100px;
+	}
+	
+	#band{
+	border: 1px outset pink;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width:fixed;
+	background-color:black;
+	margin-bottom:10px;
+}
+#band img{
+	width:150px;
+	border-radius:10px;
+	height: 100px;
+}
+
+#entertainment{
+	border: 1px outset pink;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width:fixed;
+	background-color:white;
+	margin-bottom:10px;
+}
+#entertainment img{
+	width:300px;
+	border-radius:10px;
+	height: 100px;
+}
+
+#jobs{
+	border: 1px outset pink;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width:fixed;
+	background-color:black;
+	margin-bottom:10px;
+}
+#jobs img{
+	width:150px;
+	border-radius:10px;
+	height: 100px;
+}
+
+
+#academics{
+	border: 1px outset pink;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width:fixed;
+	background-color:white;
+	margin-bottom:10px;
+}
+#academics img{
+	width:500px;
+	border-radius:10px;
+	height: fixed;
+}
+#socialN{
+	border: 1px outset pink;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width:fixed;
+	background-color:black;
+	margin-bottom:10px;
+}
+#socialN img{
+	width:100px;
+	border-radius:10px;
+	height: fixed;
+}
+
+#book1{
+	width: 300px;
+	height: 100px;
+	padding: 10px;
+	float: left;
+}
+
+<table id="band">
+			<tr>
+				<td>
+					<img src="http://visitlawrencecounty.com/wp-content/uploads/2014/01/music-notes-background-bickstock-photo3.jpg"></img>
+				</td>
+				<td>
+					<img src="file:///Users/Meghana/Pictures/Band%20Pictures/Band%20Parent%20Pictures/2014%20-%202015/ummb2014pm_0000967.jpg"></img>
+				</td>
+				<td>
+					<img src="https://www.umass.edu/band/sites/default/themes/ummb/photos/pandc-white.png"></img>
+				</td>
+				<td>
+					<img src="file:///Users/Meghana/Pictures/Band%20Pictures/Band%20Parent%20Pictures/2014%20-%202015/ummb2014pm_0000923.jpg"></img>
+				</td>
+				<td>
+					<img src="http://visitlawrencecounty.com/wp-content/uploads/2014/01/music-notes-background-bickstock-photo3.jpg"></img>
+				</td>
+			</tr>
+		</table>
+		
+		
+		<table id="entertainment">
+			<tr>
+				<td>
+					<img src="http://blogs-images.forbes.com/laurarittenhouse/files/2015/07/netflix-logo.png"></img>
+				</td>
+				<td>
+					<img src="http://i2.wp.com/pmcvariety.files.wordpress.com/2014/03/hulu-logo.jpg?crop=151px%2C120px%2C706px%2C393px&resize=670%2C377"></img>
+				</td>
+				<td>
+					<img src="http://www.youtube.com/yt/brand/media/image/YouTube-logo-full_color.png"></img>
+				</td>
+				<td>
+					<img src="http://img2.wikia.nocookie.net/__cb20150709185649/logopedia/images/9/92/Amazonprime.jpg"></img>
+				</td>
+			</tr>
+		</table>
+		
+		
+		
+
+ul{
+	list-style-type: none;
+	margin: auto;
+	padding: 5px;
+	float: right;
+}
+li{
+	float: right;
+	margin: auto;
+}
+ul li a{
+	display: block;
+	width: 303px;
+	background-color: black;
+
+	font-family: Didot;
+	height: 30px;
+	font-size: 90%;
+}
+		

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="CSSFile1.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div id="header">
+			<h1>
+				<p id = "candles">Candles</p>
+			</h1>
+		</div>
+		<div id = "nav">
+			<h2>
+				<a href="Social.html">Artwork</a><br>
+				<a href="Photography.html">Photography</a><br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<a href="Website.html">Website</a><br>
+			</h2>
+		</div>
+		<div id ="aside">
+			<h1 id="freearea4">
+				<button id="button5" onclick = "reverseImage()"><em>Previous</em></button>
+				<button id="button5" onclick = "changeImage()"><em>Next</em></button>
+					<img id="myImage5" src="Pictures/Candles/1901403_1453788801518575_1089554706_n.jpg">
+					<div id="myCaption5"> </div>
+				<script>
+					var images = ["Pictures/Candles/1957624_1451506805080108_138371179_o.jpg",
+					"Pictures/Candles/1781588_1451506758413446_1771184628_o.jpg",
+					"Pictures/Candles/1957864_1451506808413441_300725157_o.jpg",
+					"Pictures/Candles/1781524_1451506751746780_1335266827_o.jpg",
+					"Pictures/Candles/1941605_1451506778413444_1066718018_o.jpg",
+					"Pictures/Candles/1924449_1453788761518579_597271839_n.jpg",
+					"Pictures/Candles/1098014_1453788758185246_86235214_n.jpg",
+					"Pictures/Candles/1796654_1453788771518578_429622592_n.jpg",
+					"Pictures/Candles/1901403_1453788801518575_1089554706_n.jpg"
+					]
+					var captions = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+					var i = 0;
+					function changeImage(){
+						var image = document.getElementById('myImage5');
+						if(i >= images.length){
+							i = 0;
+						}
+						document.getElementById("myCaption5").innerHTML = captions[i];
+						image.src = images[i];
+						i++;
+					}
+					
+					var j = images.length-2;
+					function reverseImage(){
+						var image = document.getElementById('myImage5');
+						if(j < 0){
+							j = images.length-1;
+						}
+						document.getElementById("myCaption5").innerHTML =captions[j];
+						image.src = images[j]
+						j--;
+					}
+				</script>
+			</h1>
+		</div>
+		<h4>
+			<p id="date"></p>
+			<script>
+				document.getElementById("date").innerHTML = Date();
+			</script>
+		</h4>
+	</body>
+</html>
+			

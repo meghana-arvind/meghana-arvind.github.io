@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="CSSFile1.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div id="header">
+			<h1>
+				<p id = "london">London</p>
+			</h1>
+		</div>
+		
+		<div id="nav">
+			<h2>
+				<a href="Social.html">Artwork</a><br>
+				<a href="Photography.html">Photography</a><br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<a href="Website.html">Website</a><br>
+			</h2>
+		</div>
+		<div id="aside">
+			<h1 id="freearea4">
+					<button id="button1" onclick = "reverseImage()"><strong>Previous</strong></button>
+					<button id="button1" onclick = "changeImage()"><strong>Next</strong></button>
+					<img id="myImage1" src="Pictures/London/IMG_6080.JPG">
+					<div id="myCaption1">A bird's eye view of London</div>
+					<script>	
+						var images =["Pictures/London/IMG_6134.JPG",
+						"Pictures/London/IMG_6166.JPG",
+						"Pictures/London/IMG_6189.JPG",
+						"Pictures/London/IMG_6380.JPG",
+						"Pictures/London/IMG_6498.JPG",
+						"Pictures/London/IMG_6503.JPG",
+						"Pictures/London/IMG_6672.JPG",
+						"Pictures/London/IMG_6762.JPG",
+						"Pictures/London/IMG_7276.JPG",
+						"Pictures/London/IMG_7387.JPG",
+						"Pictures/London/IMG_7498.JPG",
+						"Pictures/London/IMG_7589.JPG",
+						"Pictures/London/IMG_7681.JPG",
+						"Pictures/London/IMG_7743.JPG",
+					    "Pictures/London/IMG_7805.JPG",
+					    "Pictures/London/IMG_8057.JPG",
+					    "Pictures/London/IMG_8058.JPG",
+						"Pictures/London/IMG_8107.JPG",
+					    "Pictures/London/IMG_6080.JPG"
+						]
+						var captions = ["The London Eye from below",
+						"A view of London from the Eye",
+						"A view of Big Ben from Eye",
+						"Stonehenge",
+						"Bath, England",
+						"A church in Bath, England",
+						"An eagle watching over Trafalgar Square",
+						"A History of British India books in the British Museum",
+						"Westminster Abbey courtyard...or Hogwarts!",
+						"A view of Tower Bridge from a cruise ship",
+						"So many crowns in the Buckingham Palace gift shop!",
+						"A clock at the Tower of London",
+						"A compass at the Tower of London",
+						"Guards marching in the Tower of London",
+						"People pedaling to move the vehicle",
+						"The Hogwarts Castle model!",
+						"The Hogwarts Castle model!",
+						"Need help crossing the street?"
+						]
+						var i = 0;
+							
+						function changeImage() {
+							var image = document.getElementById('myImage1');
+							if(i >= images.length){
+								i = 0;
+							}
+							document.getElementById("myCaption1").innerHTML = captions [i];
+							image.src = images[i]
+							i++;
+						}
+						
+						var j = images.length-2;
+						function reverseImage(){
+							var image = document.getElementById('myImage1');
+								if(j < 0){
+									j = images.length-1;
+								}
+								document.getElementById("myCaption1").innerHTML =captions[j];
+								image.src = images[j]
+								j--;
+						}
+					</script>
+			</h1>
+		</div>
+		<h4>
+			<p id="date"></p>
+			<script>
+				document.getElementById("date").innerHTML = Date();
+			</script>
+		</h4>
+	</body>
+</html>
+

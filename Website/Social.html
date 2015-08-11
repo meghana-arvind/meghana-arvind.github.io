@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="CSSFile1.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div id="header">
+			<h1>
+				<p>My Artwork</p>
+			</h1>
+		</div>
+		
+		<div id="nav">
+			<h2>
+				Artwork<br>
+				<a href="Photography.html">Photography</a><br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<a href="Website.html">Website</a><br>
+			</h2>
+		</div>
+		<div id="aside">
+			<h1 id="freearea1">
+				<div id = "container">
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+					<img id="book" onload="fade()" src="Pictures/Artwork/10406816_10153113356398290_6196335713044555249_n.jpg"></img>
+						<script>
+							$(document).ready(function(){
+								$("#book").fadeIn(4000);		
+							});
+						</script>
+						<br>
+					<button id="myFunction1" onclick=myFunction1()>What does this look like?</button>
+					<script>
+						function myFunction1(){
+							document.getElementById("trumpetcap").innerHTML = "A trumpet!";
+						}
+					</script>
+					<p id ="trumpetcap"></p>	
+				</div>
+				<br>
+				<div id = "container1">
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+					<img id="book1" onload="fade()" src="Pictures/Artwork/1483819_10152072595738290_2020913603_o.jpg"></img>
+						<script>
+							$(document).ready(function(){
+								$("#book1").fadeIn(6000);		
+							});
+						</script>
+						<br>
+						<br>
+					<p id ="etowercap">The Eiffel Tower</p>	
+				</div>
+				<br>
+				<br><br>
+				<div id = "container2">
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+					<img id="book2" onload="fade()" src="Pictures/Artwork/331534_10151282150918290_1259716164_o.jpg"></img>
+					<script>
+						$(document).ready(function(){
+							$("#book2").slideUp(5);
+							$("#book2").slideDown(2000);		
+						});
+					</script>
+					<button id="myFunction" onclick=myFunction()>What is this?</button>
+					<script>
+						function myFunction(){
+							document.getElementById("bookcap").innerHTML = "A picture from a <br> children's book";
+						}
+					</script>
+					<p id ="bookcap"></p>	
+				</div>
+				<br>
+				<div id = "container3">
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+					<img id="book3" onload="fade()" src="Pictures/Artwork/486683_10152050474658290_1337587002_n.jpg"></img>
+					<script>
+						$(document).ready(function(){
+							$("#book3").slideUp(5);
+							$("#book3").slideDown(2000);		
+						});
+					</script>
+					<br><br><br>
+					<p id ="bridgecap">The Tower Bridge</p>	
+				</div>
+			</h1>
+		</div>
+		<h4>
+			<p id="date"></p>
+			<script>
+				document.getElementById("date").innerHTML = Date();
+			</script>
+		</h4>
+	</body>
+</html>
+

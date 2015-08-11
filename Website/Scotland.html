@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="CSSFile1.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div id="header">
+			<h1>
+				<p id = "scotland">Scotland</p>
+			</h1>
+		</div>
+		
+		<div id="nav">
+			<h2>
+				<a href="Social.html">Artwork</a><br>
+				<a href="Photography.html">Photography</a><br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<a href="Website.html">Website</a><br>
+			</h2>
+		</div>
+		<div id="aside">
+			<h1 id="freearea4">
+			<button onclick = "reverseImage()">Previous</button>
+				<button onclick = "changeImage()">Next</button>
+				
+					<img id="myImage4" src="Pictures/Scotland/IMG_7021.JPG">
+					<div id="myCaption4">Edinburgh Castle</div>
+					
+					<script>
+						var images = ["Pictures/Scotland/IMG_7103.JPG", 
+						"Pictures/Scotland/IMG_7073.JPG",
+							"Pictures/Scotland/IMG_7024.JPG",
+							"Pictures/Scotland/IMG_7210.JPG",
+							"Pictures/Scotland/IMG_7021.JPG"
+						]
+						var captions = ["hi","View from Edinburgh Castle","Pioneer of Anaesthasia","Church in Edinburgh","Edinburgh Castle"]
+						var i = 0;					
+						function changeImage() {
+							var image = document.getElementById('myImage4');	
+								if(i >= images.length){
+									i = 0;
+								}
+								document.getElementById("myCaption4").innerHTML =captions[i];
+								image.src = images[i]
+								i++;
+						}
+						
+						var j = images.length-2;
+						function reverseImage(){
+							var image = document.getElementById('myImage4');
+								if(j < 0){
+									j = images.length-1;
+								}
+								document.getElementById("myCaption4").innerHTML =captions[j];
+								image.src = images[j]
+								j--;
+						}
+
+					</script>
+			</h1>
+		</div>
+		<h4>
+			<p id="date"></p>
+			<script>
+				document.getElementById("date").innerHTML = Date();
+			</script>
+		</h4>
+	</body>
+</html>
+

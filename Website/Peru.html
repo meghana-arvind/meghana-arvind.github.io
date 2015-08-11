@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="CSSFile1.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div id="header">
+			<h1>
+				<p id = "peru">Peru</p>
+				
+			</h1>
+		</div>
+		
+		<div id="nav">
+			<h2>
+				<a href="Social.html">Artwork</a><br>
+				<a href="Photography.html">Photography</a><br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<a href="Website.html">Website</a><br>
+			</h2>
+		</div>
+		<div id="aside">
+			<h1 id="freearea4">
+					<button onclick = "reverseImage()">Previous</button>
+					<button onclick = "changeImage()">Next</button>
+					<img id="myImage2" src="Pictures/Peru/IMG_2987.JPG">
+					<div id="myCaption3">A fashion show on the train to Machu Picchu</div>
+					<script>	
+						var images =["Pictures/Peru/IMG_2485.JPG",
+							"Pictures/Peru/IMG_3282.JPG",
+							"Pictures/Peru/IMG_3389.JPG",
+							"Pictures/Peru/IMG_3429.JPG",
+							"Pictures/Peru/IMG_2499.JPG",
+							"Pictures/Peru/IMG_2494.JPG",
+							"Pictures/Peru/IMG_3518.JPG",
+							"Pictures/Peru/IMG_2522.JPG",
+							"Pictures/Peru/IMG_2552.JPG",
+							"Pictures/Peru/IMG_2574.JPG",
+							"Pictures/Peru/IMG_2580.JPG",
+							"Pictures/Peru/IMG_2581.JPG",
+							"Pictures/Peru/IMG_2601.JPG",
+							"Pictures/Peru/IMG_2694.JPG",
+							"Pictures/Peru/IMG_2708.JPG",
+							"Pictures/Peru/IMG_2779.JPG",
+							"Pictures/Peru/IMG_2880.JPG",
+							"Pictures/Peru/IMG_2987.JPG"
+						]
+						var captions = ["A view of the Atlantic Ocean",
+							"A farmer's market",
+							"The airport in the Amazon",
+							"The resort we stayed at in the Amazon",
+							"Hang Gliding over the beach in Lima",
+							"Beach in Lima",
+							"A sunset we saw in the Amazon",
+							"A museum in Lima",
+							"Government Palace",
+							"Over Cusco by Airplane",
+							"The airport in Cusco",
+							"Cusco",
+							"Center of Cusco",
+							"Looking over Cusco",
+							"Marketplace",
+							"An altar we saw inside a family's home in Ollyantaytambo",
+							"Macchu Picchu",
+							"A fashion show on the train to Machu Picchu"
+							
+						]
+						var i = 0;
+							
+						function changeImage() {
+							var image = document.getElementById('myImage2');
+							if(i >= images.length){
+								i = 0;
+							}
+							document.getElementById("myCaption3").innerHTML = captions [i];
+							image.src = images[i]
+							i++;
+						}
+						
+						var j = images.length-2;
+						function reverseImage(){
+							var image = document.getElementById('myImage2');
+								if(j < 0){
+									j = images.length-1;
+								}
+								document.getElementById("myCaption3").innerHTML =captions[j];
+								image.src = images[j]
+								j--;
+						}
+					</script>
+			</h1>
+		</div>
+		<h4>
+			<p id="date"></p>
+			<script>
+				document.getElementById("date").innerHTML = Date();
+			</script>
+		</h4>
+	</body>
+</html>
+

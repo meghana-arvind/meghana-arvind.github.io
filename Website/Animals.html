@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="CSSFile1.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div id="header">
+			<h1>
+				<p id = "animals">Animals</p>
+			</h1>
+		</div>
+		
+		<div id="nav">
+			<h2>
+				<a href="Social.html">Artwork</a><br>
+				<a href="Photography.html">Photography</a><br>
+			
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<a href="Website.html">Website</a><br>
+			</h2>
+		</div>
+		<div id="aside">
+			<h1 id="freearea2">
+					<button id="button" onclick = "changeImage()">Next</button>
+					<button id="button" onclick = "reverseImage()">Previous</button>
+					<img id="myImage" src="Pictures/Animals/1932687_1451523445078444_1386632911_o.jpg">
+					<br><br>
+					<div id="myCaption">Llamas I saw on<br> my trip to Peru!</div>
+					<script>
+						var images = ["Pictures/Animals/922610_1451523478411774_1886955053_o.jpg",
+						"Pictures/Animals/902830_1451523521745103_95116875_o.jpg",
+						"Pictures/Animals/1957635_1451523441745111_1037951234_o.jpg",
+						"Pictures/Animals/1888862_1451523438411778_473447017_o.jpg",
+						"Pictures/Animals/1973782_1451523488411773_1151677876_o.jpg",
+						"Pictures/Animals/1957658_1451523548411767_1370887834_o.jpg",
+						"Pictures/Animals/1617341_1451523468411775_2130343373_o.jpg",
+						"Pictures/Animals/1798734_1451523528411769_1493823244_n.jpg",
+						"Pictures/Animals/1622552_1451523555078433_1620819821_o.jpg",
+						"Pictures/Animals/1926871_1451523511745104_1554866869_n.jpg",
+						"Pictures/Animals/1653766_1453791741518281_57030131_n.jpg",
+						"Pictures/Animals/1932687_1451523445078444_1386632911_o.jpg"
+						]
+						
+						var captions =["A herd of sheep", 
+						"A frog we saw in the Amazon", 
+						"Some ducks and chicks that we saw in a village in Cusco",
+						"Some hamsters that we saw in a village in Cusco",
+						"A monkey among the many we saw in the rainforest in the Amazon",
+						"A pigeon walking on the ground in Oxford",
+						"A duck",
+						"An alligator we saw in the Amazon",
+						"Pigeons flying off the ground that we saw in Oxford",
+						"A bird we saw in our resort in the Amazon",
+						"A bird in the Bangalore airport",
+						"Llamas I saw on<br> my trip to Peru!"
+						]
+						
+						var i = 0;
+							
+						function changeImage() {
+							var image = document.getElementById('myImage');
+							if(i >= images.length){
+								i = 0;
+							}
+							document.getElementById("myCaption").innerHTML = captions [i];
+							image.src = images[i]
+							i++;
+						}
+						
+						var j = images.length-2;
+						function reverseImage(){
+							var image = document.getElementById('myImage');
+								if(j < 0){
+									j = images.length-1;
+								}
+								document.getElementById("myCaption").innerHTML =captions[j];
+								image.src = images[j]
+								j--;
+						}
+					</script>
+			</h1>
+		</div>
+		<h4>
+			<p id="date"></p>
+			<script>
+				document.getElementById("date").innerHTML = Date();
+			</script>
+		</h4>
+	</body>
+</html>
+

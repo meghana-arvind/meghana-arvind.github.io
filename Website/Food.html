@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="CSSFile1.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div id="header">
+			<h1>
+				<p id = "food">Food</p>
+			</h1>
+		</div>
+
+		<div id="nav">
+			<h2>
+				<a href="Social.html">Artwork</a><br>
+				<a href="Photography.html">Photography</a><br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<a href="Website.html">Website</a><br>
+			</h2>
+		</div>
+		<div id="aside">
+			<h1 id="freearea2">
+					<button id= "button3" onclick = "reverseImage()">Previous</button>
+					<button id= "button3" onclick = "changeImage()">Next</button>
+					<img id="myImage3" src="Pictures/Food/1015403_1451537138410408_654180873_o.jpg">
+					<br>
+					<br>
+					<div id="myCaption5">Time for a fancy dinner.</div>
+					
+					<script>
+						var images = ["Pictures/Food/1898396_1451504991746956_1766027708_o.jpg",
+						"Pictures/Food/1495265_1451537091743746_1445871091_o.jpg",
+						"Pictures/Food/1658679_1451536128410509_706362290_o.jpg",
+						"Pictures/Food/1801239_1451537121743743_673222008_o.jpg",
+						"Pictures/Food/1913352_1451537101743745_1737959140_o.jpg",
+						"Pictures/Food/1956934_1451537058410416_945933271_o.jpg",
+						"Pictures/Food/1960836_1451537098410412_363387594_o.jpg",
+						"Pictures/Food/1780914_1451516328412489_2138799719_n.jpg",
+						"Pictures/Food/1939667_1451516318412490_1194301409_n.jpg",
+						"Pictures/Food/1801172_1451537071743748_714786618_o.jpg",
+						"Pictures/Food/1617470_1451537061743749_347860703_o.jpg",
+						"Pictures/Food/1015403_1451537138410408_654180873_o.jpg",
+						]
+						var captions = [
+						"Colorful peppers",
+						"Freshly grown tomatoes",
+						"Big orange and baby orange",
+						"Very ripe blackberries",
+						"A platter of Indian food!",
+						"Kimballs Ice Cream!",
+						"Freshly baked banana bread",
+						"More Kimballs ice cream!",
+						"Those cupcakes look so good :) ",
+						"The Cheesecake Factory makes very good cheesecake.",
+						"Time for a fancy dinner.",
+						"Time for a fancy dinner."
+						]
+						var i = 0;					
+						function changeImage() {
+							var image = document.getElementById('myImage3');	
+								if(i >= images.length){
+									i = 0;
+								}
+								document.getElementById("myCaption5").innerHTML =captions[i];
+								image.src = images[i]
+								i++;
+						}
+						
+						var j = images.length-2;
+						function reverseImage(){
+							var image = document.getElementById('myImage3');
+								if(j < 0){
+									j = images.length-1;
+								}
+								document.getElementById("myCaption5").innerHTML =captions[j];
+								image.src = images[j]
+								j--;
+						}
+
+					</script>
+			</h1>
+		</div>
+		<h4>
+			<p id="date"></p>
+			<script>
+				document.getElementById("date").innerHTML = Date();
+			</script>
+		</h4>
+	</body>
+</html>
+
