@@ -27,3 +27,30 @@ elShipping.textContent = '$' + shipping;
 
 var elGrandTotal = document.getElementById('grandTotal');
 elGrandTotal.textContent = '$' + grandTotal;
+
+var msg = "sign up to recieve our newsletter for 10% off!";
+function updateMsg(){
+	var el = document.getElementById('message');
+	el.textContent = msg;
+}
+updateMsg();
+
+var example = "This is an example";
+function updateEx(){
+	var elEx = document.getElementById('example');
+	elEx.textContent = example;
+}
+updateEx();
+
+function getSize(width, height. depth){
+	var area = width*height;
+	var volume = width*height*depth;
+	var sizes = [area, volume];
+	return sizes;
+}
+
+function updateSize(){
+	var geo = document.getElementById('geometry');
+	geo.textContent = getSize(3,2,3);
+}
+updateSize();
