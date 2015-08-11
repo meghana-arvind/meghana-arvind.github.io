@@ -111,7 +111,8 @@
 			<script>
 				var d = new Date();
 				var dateString = d.toDateString();
-				document.getElementById("date").innerHTML = dateString();
+				var date = document.getElementById('date');
+				date.textContent = dateString;
 			</script>
 			<script>
 				var person = {
