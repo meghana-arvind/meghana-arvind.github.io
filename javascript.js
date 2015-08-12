@@ -12,3 +12,7 @@ elName.textContent = hotel.name;
 
 var elRooms = document.getElementById('rooms');
 elRooms.textContent = hotel.checkAvailability();
+
+$(document).ready(function(){
+			$('#hi').fadeOut(1400);
+		});	
