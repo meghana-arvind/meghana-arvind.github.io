@@ -31,7 +31,13 @@
 				<a href="London.html">London</a><br>
 				<a href="Scotland.html">Scotland</a><br>
 				<p id="hi">Hello</p>
-				<script src="javascript.js"></script>
+				<script>
+					$(document).ready(function(){
+	$('#hi').on('click',function(){
+	$(this).fadeOut(1400);
+	});
+});
+				</script>
 			</h1>
 		</div>
 		<h4>
