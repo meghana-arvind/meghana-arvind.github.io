@@ -1,0 +1,24 @@
+h1{
+	text-align: center;
+	background-color: pink;	
+	padding: 20px;
+}
+nav ul li{
+	display: inline;
+	margin: 20px;
+	text-align:center;
+}
+nav ul{
+	display: block;
+	background-color:blue;
+	padding:15px;
+}
+.example1{
+	float:left;
+}
+figure{
+	float:left;
+}
+aside{
+	float:left;
+}
