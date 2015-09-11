@@ -17,6 +17,7 @@
 				<a href="index.html">Home</a><br>
 				<a href="Social.html">My Artwork</a><br>
 				<a href="Photography.html">My Photography</a><br>
+						<a href="About.html">About Me<br>
 				<br>
 				<br>
 				<br>
@@ -100,8 +101,18 @@
 		<h4>
 			<p id="date"></p>
 			<script>
-				document.getElementById("date").innerHTML = Date();
+				var d = new Date();
+				document.getElementById("date").innerHTML = d.toDateString();
 			</script>
+			<script>
+				var person = {
+				    firstName: "Meghana",
+				    lastName: "Arvind"
+				};
+				document.write(person.firstName + " " + person.lastName);
+			</script>
+			<br>
+			<a href="mailto:cheesypizza598@yahoo.com">Email me!</a>
 		</h4>
 	</body>
 </html>
