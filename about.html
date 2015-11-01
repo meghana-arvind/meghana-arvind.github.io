@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<p>
-			<link type="text/css" rel="stylesheet" href="CSSFile3.css"/>
-			<title>About Me</title>
-			<h1>Hello! </h1> 
-			<br>
-			<h3>This is my web page created in my spare time, as a personal HTML/CSS/JavaScript exploration project.
-			It is a work in progress. </h3>
-		</p>
+		<link type="text/css" rel="stylesheet" href="CSSFile1.css"/>
+		<title>About Me</title>
 	</head>
+	<body>
+		
+		<div id="header">
+			<h1>
+				<p id="Meg">Meghana Arvind</p>
+			</h1>
+		</div>	
+		<br>
+		<div id="nav">
+			<h2>
+				<a href="index.html">Home</a><br>
+				<a href="Social.html">My Artwork</a><br>
+				<a href="Photography.html">My Photography</a><br>
+				About Me
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+			</h2>
+		</div>	
+		<div id="aside">
+			<h1 id="freearea">
+				<p>This is my web page created in my spare time, as a personal HTML/CSS/JavaScript exploration project.
+			It is a work in progress.</p> 
+			</h1>	
+		</div>
+		<h4>
+			<br>
+			<br>
+			<p id="date"></p>
+			<script>
+				var d = new Date();
+				document.getElementById("date").innerHTML = d.toDateString();
+			</script>
+			<script>
+				var person = {
+				    firstName: "Meghana",
+				    lastName: "Arvind"
+				};
+				document.write(person.firstName + " " + person.lastName);
+			</script>
+			<br>
+			<a href="mailto:cheesypizza598@yahoo.com">Email me!</a>
+		</h4>
+	</body>
 </html>
