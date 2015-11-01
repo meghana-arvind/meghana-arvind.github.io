@@ -50,27 +50,25 @@
 		<div id="aside">
 			<h1 id="freearea">
 				<script>		
-					var name = "friend";
-					name = prompt("Hi! What is your name?");
-					if (name == "" || name == null){
-						name = "friend" ;
-					}
+					var name = prompt("Hi! What is your name?");
+					if (name != null && name != ""){
 					var today = new Date();
-					var hourNow = today.getHours();
-					var greeting;
-					if (hourNow > 18){
-						greeting = 'Good evening ' + name + '! Welcome to my page. <br> Click on the links to the left to <br> view my artwork and photography. ' ;
+						var hourNow = today.getHours();
+						var greeting;
+						if (hourNow > 18){
+							greeting = 'Good evening ' + name + '! Welcome to my page. <br> Click on the links to the left to <br> view my artwork and photography. ' ;
+						}
+						else if(hourNow > 12){
+							greeting = 'Good afternoon ' + name + '! Welcome to my page. <br> Click on the links to the left to <br> view my artwork and photography. ' ;
+						}
+						else if(hourNow > 0){
+							greeting = 'Good morning ' + name + '! Welcome to my page. <br> Click on the links to the left to <br> view my artwork and photography. ' ;
+						}
+						else{
+						greeting = 'Welcome! ' + name + '! Welcome to my page. <br> Click on the links to the left to <br> view my artwork and photography. ' ;
+						}
+						document.write(greeting);
 					}
-					else if(hourNow > 12){
-						greeting = 'Good afternoon ' + name + '! Welcome to my page. <br> Click on the links to the left to <br> view my artwork and photography. ' ;
-					}
-					else if(hourNow > 0){
-						greeting = 'Good morning ' + name + '! Welcome to my page. <br> Click on the links to the left to <br> view my artwork and photography. ' ;
-					}
-					else{
-					greeting = 'Welcome! ' + name + '! Welcome to my page. <br> Click on the links to the left to <br> view my artwork and photography. ' ;
-					}
-					document.write(greeting);
 				</script>
 				<div id="mouse" onmouseover="mOver(this)" onmouseout="mOut(this)">This page includes...</div>
 				
