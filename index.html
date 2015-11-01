@@ -52,23 +52,22 @@
 				<script>		
 					<!-- var name = prompt("Hi! What is your name?"); -->
 					<!-- if (name != null && name != "") -->
-					{var today = new Date();
-						var hourNow = today.getHours();
-						var greeting;
-						if (hourNow > 18){
-							greeting = 'Good evening friend! Welcome to my page. <br> Click on the links to the left to <br> view my artwork and photography. ' ;
-						}
-						else if(hourNow > 12){
-							greeting = 'Good evening friend!Oowai Welcome to my page. <br> Click on the links to the left to <br> view my artwork and photography. ' ;
-						}
-						else if(hourNow > 0){
-							greeting = 'Good evening friend!oowai Welcome to my page. <br> Click on the links to the left to <br> view my artwork and photography. ' ;
-						}
-						else{
-						greeting = 'Welcome! ' + name + '! Welcome to my page. <br> Click on the links to the left to <br> view my artwork and photography. ' ;
-						}
-						document.write(greeting);
+					var today = new Date();
+					var hourNow = today.getHours();
+					var greeting;
+					if (hourNow > 18){
+						greeting = 'Good evening friend! Welcome to my page. <br> Click on the links to the left to <br> view my artwork and photography. ' ;
 					}
+					else if(hourNow > 12){
+						greeting = 'Good evening friend!Oowai Welcome to my page. <br> Click on the links to the left to <br> view my artwork and photography. ' ;
+					}
+					else if(hourNow > 0){
+						greeting = 'Good evening friend!oowai Welcome to my page. <br> Click on the links to the left to <br> view my artwork and photography. ' ;
+					}
+					else{
+					greeting = 'Welcome! ' + name + '! Welcome to my page. <br> Click on the links to the left to <br> view my artwork and photography. ' ;
+					}
+					document.write(greeting);
 				</script>
 				<div id="mouse" onmouseover="mOver(this)" onmouseout="mOut(this)">This page includes...</div>
 				
