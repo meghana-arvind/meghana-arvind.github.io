@@ -51,6 +51,9 @@
 			<h1 id="freearea">
 				<script>		
 					var name = prompt("Hi! What is your name?");
+					if (name == ""){
+						name = "friend";
+					}
 					var today = new Date();
 					var hourNow = today.getHours();
 					var greeting;
